@@ -1,0 +1,41 @@
+.player-registration {
+  margin-top: 2rem;
+  background: #eaeaea;
+  border-radius: 5px;
+  padding: 1rem;
+
+  input[type="radio"] {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Chrome, Safari, Opera */
+    transform: scale(1.5);
+  }
+
+  .radio-btn {
+    margin-right: 1rem;
+  }
+
+  input:not([type="radio"]) {
+    padding: 0.5rem;
+    min-width: 250px;
+  }
+
+  button {
+    padding: 0.5rem;
+    font-weight: bold;
+    margin-top: 0.5rem;
+  }
+
+  .form-column {
+    display: inline-block;
+    margin-bottom: 1rem;
+    &.label {
+      width: 25%;
+      font-weight: bold;
+    }
+  }
+  .form-row:last-child {
+    .form-column {
+      margin-bottom: 0;
+    }
+  }
+}

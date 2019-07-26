@@ -1,0 +1,36 @@
+.header {
+  border-bottom: 1px solid #888;
+  box-shadow: 5px 0px 2px #888;
+
+  .left-section,
+  .right-section {
+    margin: 20px auto;
+  }
+  .right-section {
+    text-align: right;
+
+    .trump-detail {
+      .content {
+        font-size: 1.4em;
+        line-height: 0.75;
+      }
+    }
+    .label {
+      width: 300px;
+      display: inline-block;
+      text-align: left;
+      vertical-align: middle;
+      font-weight: bold;
+    }
+
+    .content {
+      width: 20px;
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+
+  .left-section h2 {
+    margin-top: 0;
+  }
+}

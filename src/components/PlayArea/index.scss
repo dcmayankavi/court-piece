@@ -1,0 +1,57 @@
+.play-area {
+  padding: 2rem 0;
+  background: #008000;
+
+  .opposite-team-n-center {
+    display: flex;
+    .center-area {
+      flex: 1;
+      &-content {
+        width: 200px;
+        height: 200px;
+        margin: 75px auto;
+        position: relative;
+
+        .card {
+          position: absolute;
+
+          &.self {
+            bottom: 0;
+            left: 50%;
+            transform: translate(-50%, 30%);
+          }
+
+          &.partner {
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, -30%);
+          }
+
+          &.opt-player-2 {
+            top: 50%;
+            left: 0;
+            transform: translate(-30%, -50%) rotate(90deg);
+          }
+
+          &.opt-player-1 {
+            top: 50%;
+            right: 0;
+            transform: translate(30%, -50%) rotate(90deg);
+          }
+        }
+      }
+    }
+
+    .player-wrapper {
+      align-self: center;
+
+      .cards-container .back-cover {
+        margin: -4.5em auto 0;
+        display: block;
+        &:first-child {
+          margin-top: 0.5rem;
+        }
+      }
+    }
+  }
+}

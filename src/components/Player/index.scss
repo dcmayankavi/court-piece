@@ -1,0 +1,121 @@
+.player-wrapper {
+  text-align: center;
+
+  .player-info-wrapper {
+    display: inline-block;
+    background: white;
+    padding: 5px 10px;
+    margin-bottom: 5px;
+    border-radius: 2px;
+    position: relative;
+  }
+
+  .player-name {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  &.loading,
+  &:not(.player-self) {
+    position: relative;
+  }
+
+  &.player-self:not(.loading) .my-profile,
+  &:not(.loading):not(.player-self) {
+    font-weight: bold;
+  }
+
+  .team-marker {
+    width: 0.5rem;
+    height: 0.5rem;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    &.blue {
+      background: blue;
+    }
+
+    &.green {
+      background: green;
+    }
+  }
+
+  &.center {
+    margin: auto;
+  }
+
+  &.right {
+    margin-left: auto;
+  }
+
+  &.player-self {
+    width: 90%;
+    border-radius: 5px;
+    margin-top: 25px;
+    height: auto;
+  }
+  .player-icon {
+    width: 1.5rem;
+    display: inline-block;
+    margin-right: 0.5rem;
+    vertical-align: middle;
+  }
+
+  .cards-container {
+    .card {
+      margin: auto 0 auto -20px;
+      font-size: 15pt;
+
+      &:hover {
+        z-index: 1;
+        cursor: pointer;
+      }
+    }
+    .back-cover {
+      background: white;
+      width: 3.1em;
+      height: 4.5em;
+
+      .face {
+        left: 0.2em;
+        top: 0.2em;
+      }
+
+      &:hover {
+        cursor: auto;
+        z-index: 0;
+      }
+    }
+    .card-disabled,
+    .card-disabled:hover {
+      cursor: not-allowed;
+      z-index: 0;
+
+      .front {
+        background: #eee;
+        color: rgba(0, 0, 0, 0.5);
+      }
+      .front.red {
+        color: rgba(255, 0, 0, 0.5);
+      }
+      img.face {
+        opacity: 0.4;
+      }
+    }
+  }
+  .waiting {
+    position: absolute;
+    top: 0;
+    margin-left: -5px;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+  }
+}

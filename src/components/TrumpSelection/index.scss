@@ -1,0 +1,63 @@
+.trump-selection {
+  position: fixed;
+  top: 0;
+  background: rgba(255, 255, 255, 0.9);
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 9;
+
+  label {
+    font-size: 1.4rem;
+    width: 50%;
+    display: inline-block;
+    text-align: center;
+    span {
+      font-size: 5rem;
+      line-height: 1em;
+      cursor: pointer;
+      opacity: 0.5;
+    }
+  }
+
+  button {
+    padding: 5px 10px;
+    margin-top: 1rem;
+    width: 100%;
+  }
+
+  input {
+    display: none;
+    &:checked + span {
+      opacity: 1;
+      text-shadow: 0px 0px 1px;
+    }
+  }
+  .form-column {
+    width: 200px;
+    margin: auto;
+  }
+  .cards-container {
+    text-align: center;
+    border: 1px solid #444;
+    border-radius: 5px;
+    padding: 1rem;
+
+    .card {
+      margin-bottom: 0;
+      vertical-align: bottom;
+    }
+  }
+  .cards-container-title {
+    margin: 3rem auto 0.5rem;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .trump-selection-title {
+    margin: 2rem auto 1rem;
+    text-align: center;
+    padding: 1rem;
+    border-bottom: 2px solid #444;
+  }
+}

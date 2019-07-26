@@ -1,0 +1,12 @@
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.left-section,
+.right-section {
+  display: inline-block;
+  width: 50%;
+  vertical-align: top;
+}
