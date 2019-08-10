@@ -14,7 +14,7 @@ class AppProvider extends Component {
   }
 
   componentDidMount() {
-    const socket = socketIOClient("http://127.0.0.1:3001");
+    const socket = socketIOClient("/");
     socket.on("FromAPI", data => {
       this.setState({ serverData: data, socketId: socket.id, socket: socket });
     });
